@@ -3,22 +3,24 @@
 		<head>
 			<title>Circus Arts</title>
 			<meta charset="utf-8" />
+			<link href='http://fonts.googleapis.com/css?family=Armata|Henny+Penny|Joti+One' rel='stylesheet' type='text/css' />
+			<link href='/styles/main.css' rel='stylesheet' type='text/css' />
 		</head>
 		<body>
-			<div> <!-- Begin Container -->
+			<div id="container"> <!-- Begin Container -->
 				<header id="home">
-					<img src="images/circus_tent.jpg" />
-					<div> <!-- Logo Stylized Text -->
-						<p>Circus Arts</p>
-					</div> <!-- End Logo -->
 					<nav>
 						<ul>
-							<li><a href="#home">Home</a></li>
-							<li><a href="#apparatuses">Apparatuses</a></li>
-							<li><a href="#gallery">Gallery</a></li>
+							<li class="nav"><a href="#home">Home</a></li>
+							<li class="nav"><a href="#apparatuses">Apparatuses</a></li>
+							<li class="nav"><a href="#gallery">Gallery</a></li>
 						</ul>
+					<div> <!-- Logo Stylized Text -->
+						<h1 class="title">Circus Arts</h1>
+					</div> <!-- End Logo -->
+						<div class="clear"> </div>
 						
-						<h1>Welcome to the Greatest....</h1>
+						<h2>Welcome to the Greatest....</h2>
 						
 						<p>Exercise?  Circus arts were originally a form of entertainment
 						 and have evolved over the years into an effective form of exercise.  
@@ -26,39 +28,48 @@
 						 strengthens and stretches muscle groups.</p>
 					</nav>
 				</header>
-				<article id="apparatuses">
-					<h2>Apparatuses</h2>
+				<section id="apparatuses">
+					<h3>Apparatuses</h3>
+					<article>
+						<h4>Trapeze</h4>
 					
-					<h3>Trapeze</h3>
+						<p>A trapeze is a short horizontal bar hung by ropes or metal straps 
+						from a support. Similar to a pull-up bar this provides a full upper 
+						body workout</p>
+						</article>
 					
-					<p>A trapeze is a short horizontal bar hung by ropes or metal straps 
-					from a support. Similar to a pull-up bar this provides a full upper 
-					body workout</p>
+					<article>
+						<h4>Chinese Pole</h4>
 					
-					<h3>Chinese Pole</h3>
+						<p>Chinese poles are vertical poles on which circus performers climb, 
+						slide down and hold poses.  The poles are sometimes coated in rubber 
+						to improve grip.  Chinese pole provides a full body workout with 
+						emphasis on the shoulders and back.</p>
+					</article>
 					
-					<p>Chinese poles are vertical poles on which circus performers climb, 
-					slide down and hold poses.  The poles are sometimes coated in rubber 
-					to improve grip.  Chinese pole provides a full body workout with 
-					emphasis on the shoulders and back.</p>
+					<article>
+						<h4>Tight wire</h4>
 					
-					<h3>Tight wire</h3>
+						<p>Tightrope walking is the art of walking along a thin wire or rope.
+						  It typically targets the core and lower body.  It improves one’s 
+						  overall muscle control and balance</p>
+					</article>
 					
-					<p>Tightrope walking is the art of walking along a thin wire or rope.
-					  It typically targets the core and lower body.  It improves one’s 
-					  overall muscle control and balance</p>
-					  
-					<h3>Cord lisse</h3>
+					<article>
+						<h4>Cord lisse</h4>
 					
-					<p>The name is French for “smooth rope”.  It is the rope we all 
-					remember from P.E class.  Similar to the Chinese pole, it provides a 
-					full body workout.</p>  
+						<p>The name is French for “smooth rope”.  It is the rope we all 
+						remember from P.E class.  Similar to the Chinese pole, it provides a 
+						full body workout.</p>  
+					</article>
 					
-					<h3>Juggling</h3>
-					<p>Juggling is a physical skill involving the manipulation of objects 
-					for recreation, entertainment or sport. The most recognizable form of 
-					juggling is toss juggling.  This is meant to exercise your brain.</p>
-				</article>
+					<article>
+						<h4>Juggling</h4>
+						<p>Juggling is a physical skill involving the manipulation of objects 
+						for recreation, entertainment or sport. The most recognizable form of 
+						juggling is toss juggling.  This is meant to exercise your brain.</p>
+					</article>
+				</section>
 				<aside>
 					<h2>Become a member and reap the rewards</h2>
 					
@@ -67,14 +78,24 @@
 					
 					<p><strong>Sign Up Today!!</strong></p>  
 				</aside>
+				<p class="clear"></p>
 				<section id="gallery">
 					<ul>
-						<li><img src="images/trapeze.jpg" /></li>
-						<li><img src="images/chinese_pole.jpg" /></li>
-						<li><img src="images/tight_wire.jpg" /></li>
-						<li><img src="images/cord_lisse.jpg" /></li>
-						<li><img src="images/juggling.jpg" /></li>
+						<li class="gallery"><a href="images/trapeze_bg".jpg><img src="images/trapeze.jpg" alt="trapeze" title="trapeze"/></a></li>
+						<li class="gallery"><a href="images/chinese_pole_bg"><img src="images/chinese_pole.jpg" alt="chinese pole" title="chinese pole" /></a></li>
+						<li class="gallery"><a href="images/tight_wire_bg"><img src="images/tight_wire.jpg" alt="tight wire" title="tight wire" /></a></li>
+						<li class="gallery"><a href="images/cord_lisse_bg"><img src="images/cord_lisse.jpg" alt="cord lisse" title"cord lisse" /></a></li>
+						<li class="gallery"><a href="images/juggling_bg"><img src="images/juggling.jpg" alt="juggling" title="juggling" /></a></li>
 					</ul>
+				</section>
+				<div class="clear">
+				</div>
+				<section class="col">
+					<p>It is very important to remember that there is risk of injury when performing any kind of exercise.
+					Many of these exercises are more dangerous than most.  It is highly recommended that you
+					practice safely using mats and harnesses when appropriate.  It is also recommended that 
+					beginners perform the movements under the supervision of an experienced professional or trainer.
+					These exercises offer a great alternative to going to the gym.</p>
 				</section>
 				<footer>
 					<p>Created By Steve for WSD class.  Images pulled from Wikipedia. </p>
