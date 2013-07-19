@@ -1,5 +1,5 @@
 body {
-	background:url(.../images/circus_tent.jpg);
+	background:url("../images/circus_tent.jpg");
 	background-repeat:no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
