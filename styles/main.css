@@ -1,28 +1,29 @@
+
 body {
 	background:url("../images/circus_tent.jpg");
 	background-repeat:no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
+	font: 100%/1.5;
 }
 ul {
 	list-style-type:none;
 	float:right;
-	size:100%;
 }
 h2, h3{
 	font-family:"Henny Penny";
-	font-size:24px;
+	font-size:1.5em;
 }
 p {
 	font-family:"armata";
 }
 aside {
 	float:right;
-	width:290px;
-	margin:20px;
+	width:29%;
+	margin:2%;
 	background-color: rgb(255,0,0);
-	padding:15px;
-	border-radius:20px;
+	padding:1.5%;
+	border-radius:2em;
 }
 article {
 	background-color: rgba(255,255,255,.3);
@@ -33,20 +34,20 @@ a:hover{
 
 .nav {
 	float:left;
-	margin-right:50px;
+	margin-right:3em;
 	background: #ff0000; /* Old browsers */
 	background: -moz-linear-gradient(top,  rgb(255,0,0) 0%, rgb(175,0,0) 100%); 
 	background: -webkit-linear-gradient(top,  rgb(255,0,0) 0%, rgb(175,0,0) 100%);
 	background: linear-gradient(to bottom,  rgb(255,0,0) 0%, rgb(175,0,0) 100%);
-	border-radius:10px;
+	border-radius:.625em;
 	text-align:center;
-	padding:15px;
+	padding:1em;
 }
 .title {
 	float:left;
 	margin:100px;
 	font-family:"Joti One";
-	font-size:150px;
+	font-size:9.5em;
 	text-shadow: 5px 5px 5px rgb(255,0,0);
 }
 .clear {
@@ -63,13 +64,80 @@ a:hover{
 	background-color: rgba(255,255,255,.3);
 }
 #container{
-	width:1000px;
+	width:100%;
 	margin:auto;
 }
 #apparatuses {
 	float:left;
-	width:600px;
-	margin:20px;
+	width:60%;
+	margin:2%;
 }
-  
+/* Media Queries */
 
+/* tablet landscape */
+	@media only screen and (min-width:768px) and (max-width:959px){
+	aside {
+		float:left;
+		width: 50%;
+		margin: 2% 25%;
+	}
+	#apparatuses {
+		width:70%;
+		margin: 2% 15%;
+	}
+	.title {
+		font-size:7.5em;
+	}
+	}
+/* tablet portrait */
+	@media only screen and (min-width:480px) and (max-width:767px){
+	aside {
+		float:left;
+		width: 50%;
+		margin: 2% 25%;
+	}
+	#apparatuses {
+		width:70%;
+		margin: 2% 15%;
+	}
+	body{
+		background:none;
+	}
+	.title {
+		font-size:5.5em;
+	}
+	.col {	
+		-webkit-column-count:1;
+		-moz-column-count:1;
+		column-count:1;
+	}
+	}
+/* mobile landscape */
+	@media only screen and (max-width:479px){
+	body{
+		background:none;
+	}
+	aside {
+		float:left;
+		width: 50%;
+		margin: 2% 25%;
+	}
+	#apparatuses {
+		width:70%;
+		margin: 2% 15%;
+	}
+	.title {
+		font-size:4.5em;
+	}
+	.col {	
+		-webkit-column-count:1;
+		-moz-column-count:1;
+		column-count:1;
+	}
+	.gallery {
+		display:none;
+	}
+	.nav{
+		margin-right:1.5em;
+	}
+	}
