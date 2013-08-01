@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-	<html lang="en"
+	<html lang="en">
 		<head>
 			<title>Circus Arts</title>
 			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0" />
 			<link href='http://fonts.googleapis.com/css?family=Armata|Henny+Penny|Joti+One' rel='stylesheet' type='text/css' />
 			<link href='styles/main.css' rel='stylesheet' type='text/css' />
 		</head>
@@ -73,18 +74,67 @@
 				<aside>
 					<h2>Become a member and reap the rewards</h2>
 					
-					<p>Receive a custom workout schedule, illustrated exercise diagrams, and 
-					free online personal trainer.</p>
-					
-					<p><strong>Sign Up Today!!</strong></p>  
+					<table border="1">
+						<tr>
+							<th>Benefits</th>
+							<th>Free Membership</th>
+							<th>Premium Membership</th>
+						</tr>
+						<tr>
+							<td>Custom Workout</td>
+							<td> X </td>
+							<td> X </td>
+						</tr>
+						<tr>
+							<td>Illustrated Exercises</td>
+							<td> X </td>
+							<td> X </td>
+						</tr>
+						<tr>
+							<td>Online Trainer</td>
+							<td>   </td>
+							<td> X </td>
+						</tr>
+					</table>
 				</aside>
-				<p class="clear"></p>
+				<aside>	
+					<h2><strong>Sign Up Today!!</strong></h2>
+					
+					<form>
+						<ol>
+							<li>
+								<label for="user"> Username/ Email</label><br/>
+								<input id="user" name="user" type="text" tabindex="1" />
+							</li>
+							<li>
+								<label for="password">Password</label><br/>
+								<input id="password" name="password" type="password" tabindex="2" />
+							</li>
+							<li>
+								<label for="password2">Confirm Password</label><br/>
+								<input id="password2" name="password2" type="password" tabindex="3" />
+							</li>
+							<li>
+								<label for="membership">Membership</label><br/>
+								<select id="membership" name="membership" tabindex="4">
+									<option value="free" selected="selected">Free</option>
+									<option value="premium">Premium</option>
+								</select>
+							</li>
+							<li>
+								<input id="submit" name="submit" type="submit" tabindex="5" value="Sign Up!!!" />
+							</li>
+						</ol>
+					</form>
+				</aside>
+				<div class="clear">
+				</div>
 				<section id="gallery">
 					<ul>
 						<li class="gallery"><a href="images/trapeze_bg.jpg"><img src="images/trapeze.jpg" alt="trapeze" title="trapeze"/></a></li>
 						<li class="gallery"><a href="images/chinese_pole_bg.jpg"><img src="images/chinese_pole.jpg" alt="chinese pole" title="chinese pole" /></a></li>
 						<li class="gallery"><a href="images/tight_wire_bg.jpg"><img src="images/tight_wire.jpg" alt="tight wire" title="tight wire" /></a></li>
-						<li class="gallery"><a href="images/cord_lisse_bg.jpg"><img src="images/cord_lisse.jpg" alt="cord lisse" title"cord lisse" /></a></li>
+						<li class="gallery"><a href="images/cord_lisse_bg.jpg"><img src="images/cord_lisse.jpg" alt="cord lisse" title="cord lisse" /></a></li>
 						<li class="gallery"><a href="images/juggling_bg.jpg"><img src="images/juggling.jpg" alt="juggling" title="juggling" /></a></li>
 					</ul>
 				</section>

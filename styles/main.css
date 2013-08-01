@@ -28,8 +28,27 @@ aside {
 article {
 	background-color: rgba(255,255,255,.3);
 }
+td, th{
+	color:rgb(0,255,0);
+	text-align:center;
+}
+form {
+	margin-left:20%;
+}
+label, input, select {
+	width:50%;
+}
+strong {
+	margin-left:25%%;
+}
+ol{
+	list-style-type:none;
+}
+img{
+	max-width:100%;
+}
 a:hover{
-	color:white;
+	color:rgb(255,255,255);
 }
 
 .nav {
@@ -45,17 +64,18 @@ a:hover{
 }
 .title {
 	float:left;
-	margin:100px;
+	margin:10%;
 	font-family:"Joti One";
 	font-size:9.5em;
-	text-shadow: 5px 5px 5px rgb(255,0,0);
+	text-shadow: 5px 5px 5px rgb(255,0,0); /* not converted to percent due to style purposes.  Font size is adjusted. */
 }
 .clear {
 	clear:both;
 }
 .gallery {
 	float:left;
-	margin-left:25px;
+	margin-left:2%;
+	overflow:hidden;
 }
 .col {
 	-webkit-column-count:3;
@@ -66,6 +86,7 @@ a:hover{
 #container{
 	width:100%;
 	margin:auto;
+	overflow:hidden;
 }
 #apparatuses {
 	float:left;
